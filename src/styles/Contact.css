@@ -1,0 +1,128 @@
+.contact {
+  padding: 130px 5.5vw 35px;
+  background: #f6f1e8;
+  color: #151515;
+}
+
+.contact .section-label {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 100px;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #173b63;
+}
+
+.contact .section-label span:first-child {
+  color: #c34d32;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  gap: 100px;
+  min-height: 430px;
+}
+
+.contact-content h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(60px, 7vw, 105px);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.contact-right {
+  max-width: 330px;
+  padding-top: 10px;
+}
+
+.contact-right p {
+  margin: 0 0 45px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #34516d;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-bottom: 55px;
+  padding-bottom: 5px;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #151515;
+  text-decoration: none;
+
+  border-bottom: 1px solid #151515;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-links a {
+  width: fit-content;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #173b63;
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+.contact-email:hover {
+  color: #c34d32;
+}
+
+.contact footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 25px;
+  border-top: 1px solid #d8d0c4;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 90px 6vw 30px;
+  }
+
+  .contact .section-label {
+    margin-bottom: 65px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    min-height: auto;
+  }
+
+  .contact-content h2 {
+    font-size: 58px;
+  }
+
+  .contact-right {
+    max-width: 100%;
+  }
+
+  .contact footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
