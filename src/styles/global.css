@@ -331,7 +331,7 @@ img {
   grid-template-columns: 70px 1fr 50px;
   gap: 30px;
   align-items: start;
-  padding: 36px 0;
+  padding: 30px 0;
   border-bottom: 1px solid var(--color-border);
   transition: padding 0.25s ease;
 }
@@ -379,10 +379,141 @@ img {
 
 .project__arrow {
   padding-top: 4px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   transition: transform 0.25s ease;
 }
 
 .project:hover .project__arrow {
   transform: translate(4px, -4px);
+}
+.notes {
+  padding: 120px 5.5vw 140px;
+  background: #f6f1e8;
+  color: #151515;
+}
+
+.notes .section-label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 75px;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #173b63;
+}
+
+.notes .section-label span {
+  color: #c34d32;
+}
+
+.notes-header {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 90px;
+}
+
+.notes-header h2 {
+  max-width: 700px;
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.95;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.notes-header p {
+  max-width: 300px;
+  margin: 8px 0 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #34516d;
+}
+
+.notes-list {
+  border-top: 1px solid #d8d0c4;
+}
+
+.note {
+  display: grid;
+  grid-template-columns: 50px 1fr 30px;
+  gap: 30px;
+  align-items: center;
+
+  padding: 32px 0;
+  border-bottom: 1px solid #d8d0c4;
+
+  transition: padding 0.25s ease;
+}
+
+.note:hover {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.note > span:first-child {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #c34d32;
+}
+
+.note h3 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, serif;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.note p {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #34516d;
+}
+
+.note > span:last-child {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: right;
+  color: #151515;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .notes {
+    padding: 90px 6vw 100px;
+  }
+
+  .notes-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .notes-header h2 {
+    font-size: 48px;
+  }
+
+  .note {
+    grid-template-columns: 35px 1fr 20px;
+    gap: 15px;
+    padding: 25px 0;
+  }
+
+  .note h3 {
+    font-size: 23px;
+  }
 }
