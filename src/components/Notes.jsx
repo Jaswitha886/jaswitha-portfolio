@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 function Notes() {
   return (
     <section className="notes" id="notes">
@@ -12,8 +10,7 @@ function Notes() {
           <h2>Things I'm thinking about.</h2>
 
           <p>
-            Experiments, ideas, and things I'm learning while
-            building with AI.
+            Problems I'm exploring, skills I'm developing, and ideas I'm working through.
           </p>
         </div>
 
@@ -21,9 +18,9 @@ function Notes() {
           <article className="note">
             <span>01</span>
             <div>
-              <h3>Building with Local LLMs</h3>
+              <h3>Solving Real-World Problems</h3>
               <p>
-                Experiments with Ollama, RAG, and running AI locally.
+                Exploring how software and AI can turn everyday problems into practical, usable solutions.
               </p>
             </div>
             <span className="note__arrow">↗</span>
@@ -32,9 +29,9 @@ function Notes() {
           <article className="note">
             <span>02</span>
             <div>
-              <h3>What RAG Actually Solves</h3>
+              <h3>Getting Better at DSA</h3>
               <p>
-                Notes from building retrieval-augmented AI systems.
+                Working through data structures and algorithms to strengthen problem-solving and build better programming fundamentals.
               </p>
             </div>
             <span className="note__arrow">↗</span>
@@ -43,14 +40,12 @@ function Notes() {
           <article className="note">
             <span>03</span>
             <div>
-              <h3>Why I Built QSIGN</h3>
+              <h3>Building Beyond the Idea</h3>
               <p>
-                Quantum computing, cryptography, and digital trust.
+                Learning how to turn an idea into something that actually works — from breaking down the problem to building and testing the solution.
               </p>
             </div>
-            <Link to="/projects/qsign" className="note__arrow note__arrow--link" aria-label="Read about QSIGN">
-              ↗
-            </Link>
+            <span className="note__arrow">↗</span>
           </article>
         </div>
       </div>

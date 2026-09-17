@@ -492,7 +492,7 @@ a.project__arrow:hover {
 .note p {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--color-text-secondary);
 }

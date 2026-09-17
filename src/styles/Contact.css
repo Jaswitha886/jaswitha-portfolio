@@ -50,7 +50,7 @@
 .contact-right p {
   margin: 0 0 45px;
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #34516d;
 }
@@ -61,7 +61,7 @@
   padding-bottom: 5px;
 
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   color: #151515;
   text-decoration: none;
 
@@ -78,7 +78,7 @@
   width: fit-content;
 
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #173b63;
@@ -98,7 +98,7 @@
   border-top: 1px solid #d8d0c4;
 
   font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #6b6b6b;
