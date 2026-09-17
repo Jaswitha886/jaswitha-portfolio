@@ -38,7 +38,7 @@ function Contact() {
                 LinkedIn ↗
               </a>
 
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="/Jaswitha-Sai-Rajanala-Resume.pdf" target="_blank" rel="noreferrer">
                 Resume ↓
               </a>
             </div>
