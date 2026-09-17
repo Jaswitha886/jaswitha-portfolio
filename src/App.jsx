@@ -7,6 +7,7 @@ import Work from './components/Work'
 import Notes from './components/Notes'
 import Contact from './components/Contact'
 import QSign from './pages/QSign'
+import AboutPage from './pages/AboutPage'
 import ResumeAnalyzer from './pages/ResumeAnalyzer'
 import PersonalKnowledgeRag from './pages/PersonalKnowledgeRag'
 import ExplainableAgentRouter from './pages/ExplainableAgentRouter'
@@ -29,6 +30,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/projects/qsign" element={<QSign />} />
         <Route path="/projects/resume-analyzer" element={<ResumeAnalyzer />} />
         <Route path="/projects/personal-knowledge-rag" element={<PersonalKnowledgeRag />} />

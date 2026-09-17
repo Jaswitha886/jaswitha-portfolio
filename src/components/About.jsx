@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function About() {
   return (
     <section className="about" id="about">
@@ -28,9 +30,9 @@ function About() {
             that solve actual problems.
           </p>
 
-          <a href="#contact" className="about__link">
+          <Link to="/about" className="about__link">
             A little more about me ↗
-          </a>
+          </Link>
         </div>
       </div>
     </section>
