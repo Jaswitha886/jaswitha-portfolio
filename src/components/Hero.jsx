@@ -31,19 +31,19 @@ function Hero() {
       </div>
 
       <div className="hero__visual">
-        <div className="hero__placeholder">
-          <span>Visual coming here</span>
-        </div>
-
-        <p className="hero__note">
-          currently exploring →
-        </p>
+        <img
+          src="/hero-illustration.png"
+          alt="Illustration of a developer at a desk with books, code, and plants"
+          className="hero__illustration"
+        />
 
         <div className="hero__exploring">
-          <p>AI systems</p>
-          <p>RAG</p>
-          <p>Agentic AI</p>
-          <p>Local LLMs</p>
+          <span className="hero__exploring-label">
+            currently exploring →
+          </span>
+          <span className="hero__exploring-list">
+            AI systems · RAG · Agentic AI · Local LLMs
+          </span>
         </div>
       </div>
     </section>

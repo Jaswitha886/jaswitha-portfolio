@@ -1,4 +1,31 @@
+import { Link } from 'react-router-dom'
 import { projects } from '../data/projects'
+
+function ProjectLink({ project, children }) {
+  if (project.external) {
+    return (
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noreferrer"
+        className="project__link"
+        aria-label={`View ${project.title} on GitHub`}
+      >
+        {children}
+      </a>
+    )
+  }
+
+  return (
+    <Link
+      to={project.link}
+      className="project__link"
+      aria-label={`View ${project.title}`}
+    >
+      {children}
+    </Link>
+  )
+}
 
 function Work() {
   return (
@@ -12,7 +39,7 @@ function Work() {
         <h2>
           Things I've
           <br />
-          actually built.
+          been building.
         </h2>
 
         <p>
@@ -28,19 +55,21 @@ function Work() {
               {project.number}
             </span>
 
-            <div className="project__main">
-              <h3>{project.title}</h3>
+            <ProjectLink project={project}>
+              <div className="project__main">
+                <h3>{project.title}</h3>
 
-              <p>{project.description}</p>
+                <p>{project.description}</p>
 
-              <div className="project__tags">
-                {project.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
+                <div className="project__tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <span className="project__arrow">↗</span>
+              <span className="project__arrow">↗</span>
+            </ProjectLink>
           </article>
         ))}
       </div>

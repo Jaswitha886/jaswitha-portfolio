@@ -1,0 +1,365 @@
+.qsign-page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.qsign-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qsign-nav__brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.qsign-nav__back {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  padding: 10px 16px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.qsign-nav__back:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Hero */
+.qsign-hero {
+  padding: 70px 40px 90px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qsign-hero__eyebrow {
+  margin: 0 0 20px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+}
+
+.qsign-hero__eyebrow span {
+  color: var(--color-accent);
+}
+
+.qsign-hero h1 {
+  margin: 0 0 24px;
+  font-family: var(--font-display);
+  font-size: clamp(3.8rem, 5.2vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+.qsign-hero__subtitle {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 580px;
+}
+
+.qsign-hero__intro {
+  margin: 0 0 40px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 580px;
+}
+
+.qsign-hero__back {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  padding-bottom: 4px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.qsign-hero__back:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Section styles */
+.qsign-section {
+  padding: 100px 40px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qsign-section__label {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 50px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+}
+
+.qsign-section__label span:first-child {
+  color: var(--color-accent);
+}
+
+.qsign-section h2 {
+  margin: 0 0 24px;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+.qsign-section__body {
+  max-width: 680px;
+}
+
+.qsign-section__body p {
+  margin: 0 0 20px;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+/* Trust model */
+.qsign-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.qsign-trust-card {
+  padding: 28px 24px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.qsign-trust-card__number {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.qsign-trust-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.qsign-trust-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+/* CHSH score */
+.qsign-chsh {
+  margin-top: 40px;
+}
+
+.qsign-chsh__meter {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.qsign-chsh__bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.qsign-chsh__bar {
+  width: 60px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.qsign-chsh__bar--classical {
+  height: 120px;
+  border-bottom: 2px solid var(--color-text-secondary);
+}
+
+.qsign-chsh__bar--measured {
+  height: 164px;
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.qsign-chsh__bar--quantum {
+  height: 172px;
+  border: 1px dashed var(--color-border);
+  background: none;
+}
+
+.qsign-chsh__bar-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.qsign-chsh__bar-value {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.qsign-chsh__note {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.qsign-chsh__note strong {
+  color: var(--color-text);
+}
+
+/* Workspaces */
+.qsign-workspaces {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.qsign-workspace {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 3px;
+}
+
+.qsign-workspace__label {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.qsign-workspace__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.qsign-workspace--audit {
+  background: #f5f0e0;
+}
+
+/* Technology */
+.qsign-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.qsign-tech-tag {
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Benchmark */
+.qsign-benchmark {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.qsign-benchmark__card {
+  padding: 28px 24px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.qsign-benchmark__value {
+  display: block;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.qsign-benchmark__label {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Links */
+.qsign-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Footer */
+.qsign-footer {
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .qsign-nav {
+    padding: 20px 24px;
+  }
+
+  .qsign-hero {
+    padding: 50px 24px 60px;
+  }
+
+  .qsign-section {
+    padding: 60px 24px;
+  }
+
+  .qsign-chsh__meter {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .qsign-workspaces {
+    grid-template-columns: 1fr;
+  }
+
+  .qsign-benchmark {
+    grid-template-columns: 1fr;
+  }
+
+  .qsign-footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 24px;
+  }
+}
