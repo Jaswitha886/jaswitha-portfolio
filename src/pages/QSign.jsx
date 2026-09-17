@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom'
 import '../styles/QSign.css'
 
 function QSign() {
   return (
     <main className="qsign-page">
       <header className="qsign-nav">
-        <a href="/" className="qsign-nav__brand">Jaswitha</a>
-        <a href="/" className="qsign-nav__back">Back to portfolio</a>
+        <Link to="/" className="qsign-nav__brand">Jaswitha</Link>
+        <Link to="/" className="qsign-nav__back">Back to portfolio</Link>
       </header>
 
       <section className="qsign-hero">
@@ -25,7 +26,7 @@ function QSign() {
           trails that hold up against both classical and quantum threats.
         </p>
 
-        <a href="/" className="qsign-hero__back">Back to portfolio</a>
+        <Link to="/" className="qsign-hero__back">Back to portfolio</Link>
       </section>
 
       {/* Problem */}

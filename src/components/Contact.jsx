@@ -30,7 +30,7 @@ function Contact() {
             </a>
 
             <div className="contact-links">
-              <a href="https://github.com/Jaswitha886"target="_blank"rel="noreferrer">
+              <a href="https://github.com/Jaswitha886" target="_blank" rel="noreferrer">
                 GitHub ↗
               </a>
 
